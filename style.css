@@ -1,0 +1,270 @@
+/* 🌍 Global Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("Abhiport.jpg") center/cover fixed no-repeat;
+  color: #fff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* 📌 Navbar */
+header {
+  background: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 0 0 12px 12px;
+  backdrop-filter: blur(10px);
+}
+
+/* Navbar Links */
+nav a {
+  position: relative;
+  color: #fff;
+  margin-left: 1rem;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #00bcd4;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* 🎯 Sections */
+section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  scroll-margin-top: 90px; /* Fix for sticky navbar */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #00bcd4;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+#about, #projects, #contact {
+  margin-bottom: 4rem;
+}
+
+/* About */
+.about p {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* 🚀 Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  background: none; /* background handled globally */
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Hero Button (Know More) */
+.hero button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #00bcd4, #0097a7);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,188,212,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,188,212,0.6);
+}
+/* 🎯 Skills Section */
+.skills h2 {
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 30px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,188,212,0.3);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,188,212,0.6);
+  background: linear-gradient(45deg, #00bcd4, #0097a7);
+}
+
+
+/* 📂 Projects */
+.projects h2 {
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  flex: 1 1 240px;
+  max-width: 260px;
+  margin: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 0.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.card h3 {
+  margin: 0.8rem 0 0.4rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+/* 📩 Contact */
+.contact h2 {
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ddd;
+}
+
+/* Send Button */
+button[type="submit"] {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #00bcd4, #0097a7);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(31, 80, 86, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(31, 98, 107, 0.6);
+}
+
+/* 📌 Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(34, 34, 34, 0.8);
+  border-radius: 12px 12px 0 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}

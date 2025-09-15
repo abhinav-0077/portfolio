@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinav Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>ABHINAV</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+  <h2 id="typing-text"></h2>
+  <p class="fade-in">Aspiring Developer | Designer | Engineer</p>
+  <button class="fade-in" onclick="scrollToSection('about')">Know More</button>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="about hidden">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Abhinav S, a passionate Software Developer with skills in Java, SQL, HTML, CSS, JavaScript, and React JS. Currently pursuing my B.E. in Computer Science and Engineering.
+      I focus on building efficient, user-friendly applications and enjoy solving real-world problems with clean and structured code.
+    </p>
+  </section>
+
+  <!-- Skills -->
+<section id="skills" class="skills hidden">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Java</div>
+    <div class="skill-card">SQL</div>
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">React JS</div>
+  </div>
+</section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects hidden">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="card hidden">
+        <img src="PortfolioImg.jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>A responsive portfolio template built with HTML, CSS, and JS.</p>
+      </div>
+      <div class="card hidden">
+        <img src="BusImage1.jpg" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Bus Management System Using Java</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact hidden">
+    <h2>Contact Me</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <center>
+    <p>© 2025 Abhinav. All Rights Reserved.</p>
+    </center>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
