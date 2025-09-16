@@ -89,7 +89,7 @@ section h2 {
 
 /* 🚀 Hero Section */
 .hero {
-  height: 100vh;
+  height: 180;
   display: flex;
   flex-direction: column;
   justify-content: center;
